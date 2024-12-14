@@ -126,6 +126,7 @@ h2, h3{
   img {
     width: 100%;
   }
+  
 }
 
 @media (max-width: 480px) {
@@ -245,7 +246,7 @@ h3{
 }
   
 .footer-section a {
-  color: #fff;
+  color: rgb(204, 75, 0);
   text-decoration: none;
 }
   
@@ -314,16 +315,13 @@ textarea {
   align-items: flex-start;
   margin-top: 20px;
 }
-.intro-text{
-  width: 100%;
-  padding: 20px;
-}
+
 .form-container .form{
   width: 150%;
   border-right: 100px solid rgb(227, 207, 76);
 }
 
-form{
+.form{
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -354,17 +352,24 @@ button {
 .image img{
   width: 100%;
   border-radius: 8px;
+  height: auto;
 }
 /* For tablets and below */
 @media (max-width: 768px) {
-  .container{
+  .form-container{
     flex-direction: column;
     align-items: center;
-  }
-  .form-container, .image img {
     width: 100%;
   }
-}  
+  .content {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .image img {
+    width: 100%;
+  }
+}
+  
 .about-us{
   text-align: center;
 }
